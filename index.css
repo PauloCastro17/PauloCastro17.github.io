@@ -33,6 +33,10 @@ header ul li{
     font-family: 'Maven Pro', sans-serif;
 }
 
+ul li:hover{
+    color: rgb(119, 119, 119);
+}
+
 .titleHeader{
     display: flex;
     justify-content: center;
@@ -170,4 +174,55 @@ footer h3{
     color: #FFF;
     list-style: none;
     font-family: 'Maven Pro', sans-serif;
+}
+
+@media(max-width: 768px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header ul{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .containerSobre{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .containerSobre p{
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .containerProjetos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerConhecimento{
+        display: grid;
+        grid-template-columns: 150px 150px;
+    }
+
+    .containerConhecimento img{
+        margin-top: 15px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer h3{
+        margin-top: 15px;
+    }
 }
