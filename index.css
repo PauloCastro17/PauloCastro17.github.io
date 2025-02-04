@@ -176,6 +176,32 @@ footer h3{
     font-family: 'Maven Pro', sans-serif;
 }
 
+.containerProjetosLegenda{
+    max-width: 30rem;
+}
+
+.containerProjetosLegenda p {
+    list-style-type: disc; /* Define o estilo da bolinha */
+    margin-left: 1rem; /* Dá um espaçamento para alinhar melhor */
+    position: relative; /* Permite ajustar o conteúdo */
+    padding-left: 1rem; /* Espaço para a bolinha */
+    margin-top: 0.5rem;
+}
+
+.containerProjetosLegenda p > a:hover {
+    font-weight: 700;
+    color: #231F20;
+}
+
+.containerProjetosLegenda p::before {
+    content: "•"; /* Adiciona a bolinha */
+    position: absolute;
+    left: 0;
+    color: black; /* Cor da bolinha */
+    font-size: 1.2em; /* Tamanho da bolinha */
+}
+
+
 @media(max-width: 768px){
     header{
         width: 100%;
